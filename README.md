@@ -1,2 +1,6 @@
 # River-Bar-Toolbox
-This repository contains codes and documentation to detect emerged river bars from images.
+
+River-Bar-Toolbox contains two main codes (Bar_detection, MASK), five sub-fucntions (CreateBW, CreateBWCLAHE, DrawBar, FindBar, prop) and two directories for input images (Images) and output data (Results). The example input images (image 1, image 2 and image 3) are a product of the post-processing of images acquired by the Sena Gallica Speculator (SGS) videomonitoring station, located in the harbour of Senigallia (Marche, Italy). The images display the final stretch of the Misa river estuary, where an emerged bar is visible. The output for these example images are in the Results directory. Note that the output obtained by the user may vary slightly from those reported in the directory. In fact, some operations (creation of a mask; drawing of a Region Of Interest), which must be performed directly by the user, affect the result.
+Bar_detection is a semi-automatic procedure to detect the emerged area of a sediment deposit from images either of a river or of the sea. Through a sequence of image processing operations, the code identifies the emerged part of the deposit and measures its area, centre of mass and perimeter. The code also stores the coordinates of the pixels included in the detected area, in order to allow the reproduction of the shape of the deposit after the analysis.
+
+More information about the code on UserGuide.pdf.
